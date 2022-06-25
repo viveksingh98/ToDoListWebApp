@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
@@ -12,6 +12,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListWebAppPages", "ToDoListWebAppPages\ToDoListWebAppPages.csproj", "{F0732892-3172-4817-B386-85EF55D9AFFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListWebAppTests", "ToDoListWebAppTests\ToDoListWebAppTests.csproj", "{35BDE1B1-ABCD-43BF-89B0-7C14599A3F58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataModel", "DataModel", "{E3855F20-E042-496D-917D-823FB4DBDE3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductModel", "ProductModel", "{70E1D52D-C17B-4A6F-A061-D471DC04243C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ulitlities", "Ulitlities", "{C78C5190-93AC-4B82-882B-AF0365DA1B71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportLogger", "ReportLogger", "{0F4B2587-D858-4CD1-9CB7-7B4399B325D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6CD1B826-AADF-41AB-AD19-25614360645A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +52,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93F0C0CE-9666-475B-AFC3-DD9322EDC79D} = {0F4B2587-D858-4CD1-9CB7-7B4399B325D7}
+		{33D53684-A15C-4290-8A51-678EC034C2C7} = {E3855F20-E042-496D-917D-823FB4DBDE3C}
+		{8EA32D17-BC98-40D6-8095-8D36F7C04C86} = {C78C5190-93AC-4B82-882B-AF0365DA1B71}
+		{F0732892-3172-4817-B386-85EF55D9AFFC} = {70E1D52D-C17B-4A6F-A061-D471DC04243C}
+		{35BDE1B1-ABCD-43BF-89B0-7C14599A3F58} = {6CD1B826-AADF-41AB-AD19-25614360645A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1AC2A1B2-6353-48DB-8854-DC5932F02ADD}
