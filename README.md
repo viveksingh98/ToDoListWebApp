@@ -33,7 +33,7 @@ Given below are some positive and negative scenarios: <hr />
     Verify list contains following todo items with radio button unchecked <br />
       <i> a. Yoga Class </i><br />
       <i> b. Visit leh ladakh </i><br />
-      <i> c. Create mobile app to help blind people </i><br />
+      <i> c. Create accessibility app to help blind people </i><br />
 
 8.  Verify existing todo item name is ~stikethough~ from the todo list after clicking on radio button <br />
 
