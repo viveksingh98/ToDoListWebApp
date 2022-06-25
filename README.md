@@ -59,13 +59,13 @@ Given below are some positive and negative scenarios: <hr />
 9. Verify **double click** on list item makes it **editable** and available for changing its values
 
 # Automation of the above scenarios: <br />
-<hr />
-**Technology used:**  C#, MSTest, Selenium, Extent Reports for Logging and Reporting
-**Design Patterns used:** POM, MVC, Single responsibility principle, DRY
-**Event Report Output:**  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i>
+
+<b>Technology used:</b>  C#, MSTest, Selenium, Extent Reports for Logging and Reporting <br />
+<b>Design Patterns used:</b> POM, MVC, Single responsibility principle, DRY <br />
+<b>Event Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i>
  
 ## Automation Framework Skeletal Structure: <br />
-**DataModel:** <br />
+<b>DataModel:</b> <br />
 <ul>
 	<li>ToDoListWebAppData
 		<ul>
@@ -74,7 +74,7 @@ Given below are some positive and negative scenarios: <hr />
 	</li>
 </ul>
 <br />
-**ProductModel:** <br />
+<b>ProductModel:</b> <br />
 <ul>
 	<li>ToDoListWebAppPages
 		<ul>
@@ -84,7 +84,7 @@ Given below are some positive and negative scenarios: <hr />
 		</li>
 </ul>
 <br />
-**ReportLogger:** <br />
+<b>ReportLogger:</b> <br />
 <ul>
 	<li>ExtentLogger
 		<ul>
@@ -94,7 +94,7 @@ Given below are some positive and negative scenarios: <hr />
 		</li>
 </ul>
 <br />
-**Functional Tests:** <br />
+<b>Functional Tests:</b> <br />
 <ul>
 	<li>ToDoListWebAppTests
 		<ul>
@@ -104,7 +104,7 @@ Given below are some positive and negative scenarios: <hr />
 		</li>
 </ul>
 <br />
-**Ulitlities:** <br />
+<b>Ulitlities:</b> <br />
 <ul>
 	<li>ToDoListWebAppHelpers
 		<ul>
