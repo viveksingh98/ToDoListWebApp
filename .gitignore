@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs/ToDoListWebAppTests/v16
+/ExtentLogger/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/packages
+/ToDoListWebAppData/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/ToDoListWebAppHelpers/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/ToDoListWebAppPages/obj/Debug/TempPE/WebElements.Designer.cs.dll
+/ToDoListWebAppPages/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/ToDoListWebAppPages/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/ToDoListWebAppTests/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
