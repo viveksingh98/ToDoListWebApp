@@ -8,11 +8,11 @@ Given below are some positive and negative scenarios: <hr />
 
 1. Verify URL https://todomvc.com/examples/angular2/ is working, Verify window title is **'Angular.TodoMVC'**<br />
 
-2. Verify availability of controls on angular2 home page <br />
+2. Verify availability of controls on the home page <br />
 	<i>a. Header 'todos' </i><br />
 	<i>b. Input TextBox 'What needs to be done?' </i><br />
 
-3.  Verify footers information is present on angular2 home page <br />
+3.  Verify footers information is present on ToDoMVC home page <br />
       <ul>
 	<li><i>Double-click to edit a todo</i> </li>
 	<li><i>Created by Sam Saccone and Colin Eberhardt using Angular2</i> </li>
@@ -28,12 +28,12 @@ Given below are some positive and negative scenarios: <hr />
     e.g add following todo items <br />
       <i>a. Yoga Class </i><br />
       <i> b. Visit leh ladakh</i> <br />
-      <i> c. Create mobile app to help blind people </i><br />
+      <i> c. Create accessibility app to help blind people </i><br />
 
     Verify list contains following todo items with radio button unchecked <br />
       <i> a. Yoga Class </i><br />
       <i> b. Visit leh ladakh </i><br />
-      <i> c. Create mobile app to help blind people </i><br />
+      <i> c. Create accessibility app to help blind people </i><br />
 
 8.  Verify existing todo item name is ~stikethough~ from the todo list after clicking on radio button <br />
 
@@ -52,7 +52,72 @@ Given below are some positive and negative scenarios: <hr />
 2. Verify user is able to add todo item name conatins special character **e.g.#$%^%^##&^*^&*** <br />
 3. Verify todo item can not be added with **blank** name <br />
 4. Verify todo item cannot be added with name which contains only **spaces** and **no characters** <br />
-5. Verify number of **character limit** for todo item name e.g (Consider maximum char limit 100 char). The user should not be able to add more than **100 characters** in ToDo list <br />
+5. Verify number of **character limit** for todo item name e.g (Consider maximum char limit 100 char). In this case the user should be able to add more than **100 characters** in ToDo list <br />
 6. Verify todo items **data persists** when user hits **Refresh** on the web page or closes and launches the page again <br />
-7. Verify **verticle scroll bar** is added to right corner of the page when user add more than **6 todo items** <br />
-8. Verify todo item with **duplicate name** cannot be added <br />
+7. Verify **verticle scroll bar** is added to right corner of the page when user add more than **screen size todo items** <br />
+8. Verify todo items with **duplicate names** are also allowed <br />
+9. Verify **double click** on list item makes it **editable** and available for changing its values
+
+# Automation of the above scenarios: <br />
+
+<b>Technology used:</b>  C#, MSTest, Selenium, Extent Reports for Logging and Reporting <br />
+<b>Design Patterns used:</b> POM, MVC, Single responsibility principle, DRY <br />
+<b>Extent Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i> <br />
+<b>Chrome driver version used:</b> 103.0.5060.53 <br />
+<b>Git Hub Repository URL for cloning:</b> https://github.com/viveksingh98/ToDoListWebApp.git
+	
+ 
+## Automation Framework Skeletal Structure: <br />
+<b>DataModel:</b> <br />
+<ul>
+	<li>ToDoListWebAppData
+		<ul>
+			<li>WhatNeedsToBeDoneInputData</li>
+	</ul>
+	</li>
+</ul>
+<br />
+<b>ProductModel:</b> <br />
+<ul>
+	<li>ToDoListWebAppPages
+		<ul>
+			<li>ToDoMVCPage</li>
+			<li>WebElements</li>
+	</ul>
+		</li>
+</ul>
+<br />
+<b>ReportLogger:</b> <br />
+<ul>
+	<li>ExtentLogger
+		<ul>
+			<li>ReportLoggerBase</li>
+			<li>ReportLogger</li>
+	</ul>
+		</li>
+</ul>
+<br />
+<b>Functional Tests:</b> <br />
+<ul>
+	<li>ToDoListWebAppTests
+		<ul>
+			<li>ToDoMVCTests</li>
+			<li>extent-config</li>
+	</ul>
+		</li>
+</ul>
+<br />
+<b>Ulitlities:</b> <br />
+<ul>
+	<li>ToDoListWebAppHelpers
+		<ul>
+			<li>SeleniumHelper</li>
+			<li>FrameworkUtility</li>
+			<li>PageWebElements</li>
+			<li>StepImageContext</li>
+			<li>AppConfigManager</li>
+	</ul>
+		</li>
+</ul>
+
+<hr />
