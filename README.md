@@ -12,7 +12,7 @@ Given below are some positive and negative scenarios: <hr />
 	<i>a. Header 'todos' </i><br />
 	<i>b. Input TextBox 'What needs to be done?' </i><br />
 
-3. Verify footers information present angular2 home page <br />
+3. Verify footers information is present on angular2 home page <br />
 <ul>
 	<li><i>Double-click to edit a todo</i> </li>
 	<li><i>Created by Sam Saccone and Colin Eberhardt using Angular2</i> </li>
