@@ -55,4 +55,4 @@ Given below are some positive and negative scenarios: <hr />
 5. Verify number of **character limit** for todo item name e.g (Consider maximum char limit 100 char). The user should not be able to add more than **100 characters** in ToDo list <br />
 6. Verify todo items **data persists** when user hits **Refresh** on the web page or closes and launches the page again <br />
 7. Verify **verticle scroll bar** is added to right corner of the page when user add more than **6 todo items** <br />
-8. Verify todo item with **duplicate name** can not be added <br />
+8. Verify todo item with **duplicate name** cannot be added <br />
