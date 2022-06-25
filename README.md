@@ -8,7 +8,7 @@ Given below are some positive and negative scenarios: <hr />
 
 1. Verify URL https://todomvc.com/examples/angular2/ is working, Verify window title is **'Angular.TodoMVC'**<br />
 
-2. Verify availability of controls on angular2 home page <br />
+2. Verify availability of controls on the home page <br />
 	<i>a. Header 'todos' </i><br />
 	<i>b. Input TextBox 'What needs to be done?' </i><br />
 
