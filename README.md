@@ -62,7 +62,7 @@ Given below are some positive and negative scenarios: <hr />
 
 <b>Technology used:</b>  C#, MSTest, Selenium, Extent Reports for Logging and Reporting <br />
 <b>Design Patterns used:</b> POM, MVC, Single responsibility principle, DRY <br />
-<b>Event Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i>
+<b>Extent Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i>
  
 ## Automation Framework Skeletal Structure: <br />
 <b>DataModel:</b> <br />
