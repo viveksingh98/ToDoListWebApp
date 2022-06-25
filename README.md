@@ -57,3 +57,64 @@ Given below are some positive and negative scenarios: <hr />
 7. Verify **verticle scroll bar** is added to right corner of the page when user add more than **screen size todo items** <br />
 8. Verify todo items with **duplicate names** are also allowed <br />
 9. Verify **double click** on list item makes it **editable** and available for changing its values
+
+# Automation of the above scenarios: <br />
+<hr />
+**Technology used:**  C#, MSTest, Selenium, Extent Reports for Logging and Reporting
+**Design Patterns used:** POM, MVC, Single responsibility principle, DRY
+**Event Report Output:**  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i>
+ 
+## Automation Framework Skeletal Structure: <br />
+**DataModel:** <br />
+<ul>
+	<li>ToDoListWebAppData
+		<ul>
+			<li>WhatNeedsToBeDoneInputData</li>
+	</ul>
+	</li>
+</ul>
+<br />
+**ProductModel:** <br />
+<ul>
+	<li>ToDoListWebAppPages
+		<ul>
+			<li>ToDoMVCPage</li>
+			<li>WebElements</li>
+	</ul>
+		</li>
+</ul>
+<br />
+**ReportLogger:** <br />
+<ul>
+	<li>ExtentLogger
+		<ul>
+			<li>ReportLoggerBase</li>
+			<li>ReportLogger</li>
+	</ul>
+		</li>
+</ul>
+<br />
+**Functional Tests:** <br />
+<ul>
+	<li>ToDoListWebAppTests
+		<ul>
+			<li>ToDoMVCTests</li>
+			<li>extent-config</li>
+	</ul>
+		</li>
+</ul>
+<br />
+**Ulitlities:** <br />
+<ul>
+	<li>ToDoListWebAppHelpers
+		<ul>
+			<li>SeleniumHelper</li>
+			<li>FrameworkUtility</li>
+			<li>PageWebElements</li>
+			<li>StepImageContext</li>
+			<li>AppConfigManager</li>
+	</ul>
+		</li>
+</ul>
+
+<hr />
