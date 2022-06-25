@@ -28,7 +28,7 @@ Given below are some positive and negative scenarios: <hr />
     e.g add following todo items <br />
       <i>a. Yoga Class </i><br />
       <i> b. Visit leh ladakh</i> <br />
-      <i> c. Create mobile app to help blind people </i><br />
+      <i> c. Create accessibility app to help blind people </i><br />
 
     Verify list contains following todo items with radio button unchecked <br />
       <i> a. Yoga Class </i><br />
