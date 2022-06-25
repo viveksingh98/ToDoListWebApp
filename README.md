@@ -56,4 +56,4 @@ Given below are some positive and negative scenarios: <hr />
 6. Verify todo items **data persists** when user hits **Refresh** on the web page or closes and launches the page again <br />
 7. Verify **verticle scroll bar** is added to right corner of the page when user add more than **screen size todo items** <br />
 8. Verify todo items with **duplicate names** are also allowed <br />
-9. Verify double click on list item makes it editable and available for changing its values
+9. Verify **double click** on list item makes it **editable** and available for changing its values
