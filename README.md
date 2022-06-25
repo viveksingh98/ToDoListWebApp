@@ -63,7 +63,9 @@ Given below are some positive and negative scenarios: <hr />
 <b>Technology used:</b>  C#, MSTest, Selenium, Extent Reports for Logging and Reporting <br />
 <b>Design Patterns used:</b> POM, MVC, Single responsibility principle, DRY <br />
 <b>Extent Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i> <br />
-<b>Chrome driver version used:</b> 103.0.5060.53
+<b>Chrome driver version used:</b> 103.0.5060.53 <br />
+<b>Git Hub Repository URL for cloning:</b> https://github.com/viveksingh98/ToDoListWebApp.git
+	
  
 ## Automation Framework Skeletal Structure: <br />
 <b>DataModel:</b> <br />
