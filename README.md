@@ -165,9 +165,7 @@ namespace ExtentLogger
     public class ReportLogger : ReportLoggerBase
     {
 
-        /// <summary>
-        /// Flushes the Extent Report context
-        /// </summary>
+        
         public static void FlushExtent()
         {
             try
@@ -196,10 +194,7 @@ namespace ExtentLogger
     {
         public static ExtentReports extent;
         public static string dirpath;
-        /// <summary>
-        /// Extent Logger Configuration
-        /// </summary>
-        /// <param name="testcasename">Accepts test case name as parameter</param>
+        
         public static void ReportLogger(string testcasename)
         {
             try
