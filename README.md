@@ -226,7 +226,7 @@ namespace ExtentLogger
 </code>
 </pre>
 
-<p>In test cases this is how i made use of my customized extentlogger class:</p><br />
+<p>In test cases this is how i made use of my customized extentlogger project:</p><br />
 
 <pre>
 <code>
