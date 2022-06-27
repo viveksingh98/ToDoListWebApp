@@ -154,4 +154,80 @@ A Test Status may include following values or more: <br />
 	<li>FAIL </li>
 	<li>SKIP </li>
 	<li>INFO </li>
-</ul>
+</ul> <br />
+
+I have used extent reports by customising it like how i wanted for this assignment: <br />
+
+Here is the derived Report logger class which i customised it as per my requirement - <br />
+<pre><code>
+namespace ExtentLogger
+{
+    public class ReportLogger : ReportLoggerBase
+    {
+
+        /// <summary>
+        /// Flushes the Extent Report context
+        /// </summary>
+        public static void FlushExtent()
+        {
+            try
+            {
+                //Boolean boolFailFlag = false;
+                extent.Flush();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception occured due to - {ex.Message}");
+                throw ex;
+            }
+        }
+    }
+}
+</code>
+</pre>
+	
+<p>with the base class which looks something like this -</p><br />
+
+<pre>
+<code>
+namespace ExtentLogger
+{
+    public class ReportLoggerBase
+    {
+        public static ExtentReports extent;
+        public static string dirpath;
+        /// <summary>
+        /// Extent Logger Configuration
+        /// </summary>
+        /// <param name="testcasename">Accepts test case name as parameter</param>
+        public static void ReportLogger(string testcasename)
+        {
+            try
+            {
+                extent = new ExtentReports();
+                var dir = AppDomain.CurrentDomain.BaseDirectory.Replace(@"bin\debug", "");
+
+                Directory.CreateDirectory(dir + @"\Test_Execution_Reports");
+                Random rand = new Random();
+                string rndno = rand.Next(2000).ToString();
+                dirpath = dir + @"\Test_Execution_Reports\Test_Execution_Reports" + "_" + testcasename;
+
+                ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(dirpath);
+                htmlReporter.Config.Theme = Theme.Dark;
+
+
+                extent.AttachReporter(htmlReporter);
+                extent.AddSystemInfo("Host Name", System.Net.Dns.GetHostName());
+                extent.AddSystemInfo("User Name", System.Security.Principal.WindowsIdentity.GetCurrent().Name);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception occured due to - {ex.Message}");
+                throw ex;
+            }
+        }
+    }
+}
+</code>
+</pre>
+
