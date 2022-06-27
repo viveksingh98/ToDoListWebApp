@@ -64,7 +64,9 @@ Given below are some positive and negative scenarios: <hr />
 <b>Design Patterns used:</b> POM, MVC, Single responsibility principle, DRY <br />
 <b>Extent Report Output:</b>  <i><project_folder>\ToDoListWebApp\ToDoListWebAppTests\bin\Debug\Test_Execution_Reports</i> <br />
 <b>Chrome driver version used:</b> 103.0.5060.53 <br />
-<b>Git Hub Repository URL for cloning:</b> https://github.com/viveksingh98/ToDoListWebApp.git
+<b>Git Hub Repository URL for cloning:</b> https://github.com/viveksingh98/ToDoListWebApp.git <br />
+<b>Editor required to run the Automated Test Cases:</b> <a href="https://visualstudio.microsoft.com/vs/older-downloads/"> Microsoft Visual Studio Enterprise </a>
+
 	
  
 ## Automation Framework Skeletal Structure: <br />
