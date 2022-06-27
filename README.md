@@ -226,3 +226,84 @@ namespace ExtentLogger
 </code>
 </pre>
 
+<p>In test cases this is how i made use of my customized extentlogger class:</p><br />
+
+<pre>
+<code>
+ public void GenerateExtentReport(string nodeName)
+        {
+            try
+            {
+                exParentTest = ReportLoggerBase.extent.CreateTest(TestContext.TestName);
+                exChildTest = exParentTest.CreateNode(nodeName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+	
+</code>
+</pre>
+
+<p> Test cleanup and assembly cleanup will contain following definitions: </p>
+<pre>
+<code>
+  [TestCleanup]
+        public void CleanupFile()
+        {
+            var status = TestContext.CurrentTestOutcome;
+            Status logstatus;
+
+            switch (status)
+            {
+                case UnitTestOutcome.Failed:
+                    logstatus = Status.Fail;
+                    break;
+                case UnitTestOutcome.Inconclusive:
+                    logstatus = Status.Warning;
+                    break;
+                case UnitTestOutcome.Passed:
+                    logstatus = Status.Pass;
+                    break;
+                default:
+                    logstatus = Status.Error;
+                    break;
+
+            }
+
+            if (exChildTest != null)
+            {
+                exChildTest.Log(logstatus, "Test ended with " + logstatus);
+            }
+            System.Threading.Thread.Sleep(3 * 1000);
+            ToDoMVCPage.driver.Quit();
+        }
+        [AssemblyCleanup]
+        public static void AssemblyCleanup()
+        {
+            ReportLogger.FlushExtent();
+            Boolean boolFailFlag = false;
+            SeleniumHelper.getDriver().Quit();
+        }
+</code>
+</pre>
+
+<p>And in the test method the function is called like this -<p> <br />
+
+<pre><code>
+ public void VerifyListItemEditableOnDoubleClick()
+        {
+            try
+            {
+                string yogaClassText = "Yoga Class";
+                GenerateExtentReport("Verify double click on list item makes it editable and available for changing its values");
+                Assert.IsTrue(ToDoMVCPage.CheckListItemEditableOnDoubleClick(yogaClassText), "Verify double click on list item makes it editable and available for changing its values");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Test case failed due to {ex.Message}");
+                throw ex;
+            }
+        }
+</code></pre>
