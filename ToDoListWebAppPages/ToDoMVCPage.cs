@@ -248,7 +248,7 @@ namespace ToDoListWebAppPages
         }
 
         /// <summary>
-        /// 
+        /// Clicks on Clear Completed element to clear the strikethrough/checked item in the list
         /// </summary>
         /// <param name="data">data list</param>
         /// <returns>true if successful else returns false</returns>
