@@ -123,3 +123,35 @@ Given below are some positive and negative scenarios: <hr />
 </ul>
 
 <hr />
+
+## How reporting works
+Extent Reports contain two classes: <br />
+<ol>
+<li>
+ExtentReports class </li> <br />
+<li>ExtentTest class</li> </ol> <br />
+
+<b>Syntax:</b> <br />
+<pre><code>
+ExtentReports reports = new ExtentReports("HTML File Path", true/false); <br />
+
+ExtentTest test = reports.startTest("TestName"); <br />
+</code></pre>
+The ExtentReports class generates reports in HTML format on the path specified by the tester (Index.html). Based on the Boolean flag, the existing reportis either overwritten or a new report is generated. ‘True’ is the default value which indicates that current reports will be overwritten. <br />
+
+The ExtentTest class logs test steps onto the previously generated HTML report. <br />
+
+Both classes can be used with the following built-in methods: <br /> <br />
+<ol>
+<li>startTest: Executes preconditions of a test case </li><br />
+<li>endTest: Executes postconditions of a test case </li><br />
+<li>Log: Logs the status of each test step onto the HTML report being generated </li><br />
+<li>Flush: Erases any previous data on a relevant report and creates a whole new report </li><br /><br />
+
+A Test Status may include following values or more: <br />
+<ul>
+	<li>PASS </li>
+	<li>FAIL </li>
+	<li>SKIP </li>
+	<li>INFO </li>
+</ul>
